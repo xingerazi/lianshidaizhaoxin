@@ -32,8 +32,10 @@ export default {
 <style>
 .el-header{
   padding: 0 0 10px;
+  z-index: 1000;
 } 
 .el-footer {
+  margin-top: 0;
   background-color: #b3c0d1;
   color: #333;
   text-align: center;
@@ -41,7 +43,10 @@ export default {
 }
 
 .el-main {
-  min-height: 100vh;
+  min-height: 80vh;
+  padding: 0;
+  margin: 20px 0 0 0;
+  overflow: hidden;
 }
 
 body > .el-container {
