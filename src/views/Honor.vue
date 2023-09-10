@@ -90,7 +90,7 @@
       <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/计设省级特等奖-陈津旭.jpg" alt=""></div></el-col>
     </el-row>
     <el-row :gutter="20" class="wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0s">
-      <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/三创省三-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/信安国一-王柯阳.jpg" alt=""></div></el-col>
       <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/计设省一-罗家逸.png" alt=""></div></el-col>
       <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/数学竞赛省二-王柯阳.jpg" alt=""></div></el-col>
       <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/2023060474.png" alt=""></div></el-col>
@@ -122,7 +122,7 @@
       <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/获奖证书 SCJSJ202301030074-4.png" alt=""></div></el-col>
     </el-row>
     <el-row :gutter="20" class="wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0s">
-      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省级特等奖-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/信安国一-王柯阳.jpg" alt=""></div></el-col>
       <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省级特等奖-陈津旭.jpg" alt=""></div></el-col>
     </el-row>
     <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s">
