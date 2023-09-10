@@ -895,7 +895,7 @@ a{
 .txt{
   font-size: 16px;
 }
-   @media screen and (max-width:1024px) {
+   @media screen and (max-width:1400px) {
     .infoPC{
       display: none;
     }

@@ -329,7 +329,7 @@ export default {
   padding-bottom: 30px;
   font-weight: bold;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
     .block1{
       margin:0;
     }
