@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const http = axios.create({
-  baseURL: 'https://47.109.153.240:3000',
+  baseURL: 'https://back.lianshidai.com.cn:3000',
   timeout: 10000,
 })
 
