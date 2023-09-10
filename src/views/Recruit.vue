@@ -3,7 +3,7 @@
     <p class="title">链时代工作室2023招新题目</p>
     <el-divider>beginning</el-divider>
     <div>
-      <div v-show="collapse">
+      <div v-show="1">
         <el-card
           style="
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12),
@@ -30,7 +30,7 @@
                     >点击跳转</a
                   >请自行注册后报名，提交。
                 </p>
-                <p>5.招新截止时间为：...</p>
+                <p>5.招新截止时间为：9.12—10.12</p>
               </div>
               <el-button
                 style="margin-top: 20px"
@@ -43,13 +43,6 @@
                 type="info"
                 @click="downloadMarkdownFilec"
                 >题目下载</el-button
-              >
-              <el-button
-                style="margin-top: 20px"
-                type="primary"
-                @click="sumbitbox = true"
-                class="submitbtn"
-                >提交招新题</el-button
               >
             </div>
             <hr />
@@ -82,7 +75,7 @@
                 <p>
                   4.在学习中遇到任何问题都可以咨询学长学姐，与大学生活有关的问题也可以进行询问哦
                 </p>
-                <p>5.招新截止时间为：...</p>
+                <p>5.招新截止时间为：9.12—10.12</p>
               </div>
               <el-button
                 style="margin-top: 20px"
@@ -96,13 +89,7 @@
                 @click="downloadMarkdownFilefront"
                 >题目下载</el-button
               >
-              <el-button
-                style="margin-top: 20px"
-                type="primary"
-                @click="sumbitbox = true"
-                class="submitbtn"
-                >提交招新题</el-button
-              >
+
             </div>
             <hr />
           </div>
@@ -128,6 +115,7 @@
                 <p>
                   5.有任何问题请加QQ：2356176435，或直接在群里找学长提问😘。
                 </p>
+                <p>招新截止时间为：9.12—10.12</p>
               </div>
               <el-button
                 style="margin-top: 20px"
@@ -141,13 +129,7 @@
                 @click="downloadMarkdownFilejava"
                 >题目下载</el-button
               >
-              <el-button
-                style="margin-top: 20px"
-                type="primary"
-                @click="sumbitbox = true"
-                class="submitbtn"
-                >提交招新题</el-button
-              >
+
             </div>
             <hr />
           </div>
@@ -168,7 +150,7 @@
                 <p>2.</p>
                 <p>3.</p>
                 <p>4.</p>
-                <p>5.招新截止时间为：...</p>
+                <p>5.招新截止时间为：9.12—10.12</p>
               </div>
               <el-button
                 style="margin-top: 20px"
@@ -182,13 +164,7 @@
                 @click="downloadMarkdownFileml"
                 >题目下载</el-button
               >
-              <el-button
-                style="margin-top: 20px"
-                type="primary"
-                @click="sumbitbox = true"
-                class="submitbtn"
-                >提交招新题</el-button
-              >
+
             </div>
             <hr />
           </div>
@@ -215,9 +191,8 @@
                 <p>
                   4.如果有任何问题请加qq：1994589823或2589815532，或者直接在招新群中找相关学长
                 </p>
-                <p>5.感谢您的支持与配合，祝好运！！</p>
+                <p>5.招新截止时间为：9.12—10.12,感谢您的支持与配合，祝好运！！</p>
               </div>
-              <p style="border: none">...</p>
               <el-button
                 style="margin-top: 20px"
                 type="primary"
@@ -229,13 +204,6 @@
                 type="info"
                 @click="downloadMarkdownFilechain"
                 >题目下载</el-button
-              >
-              <el-button
-                style="margin-top: 20px"
-                type="primary"
-                @click="sumbitbox = true"
-                class="submitbtn"
-                >提交招新题</el-button
               >
             </div>
             <hr />
