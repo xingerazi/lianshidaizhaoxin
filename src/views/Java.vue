@@ -3,33 +3,7 @@
       <h2>后端招新</h2>
       <el-divider></el-divider>
       <el-card class="question">
-        <h3 style="margin-bottom: 30px">1. 打印第十行</h3>
-        <p> <span>题目描述: </span
-          >给定一个文本文件 file.txt，请只打印这个文件中的第十行。</p>
-        <pre>
-
-            示例:
-            假设 file.txt 有如下内容：
-            Line 1
-            Line 2
-            Line 3
-            Line 4
-            Line 5
-            Line 6
-            Line 7
-            Line 8
-            Line 9
-            Line 10
-
-            你的脚本应当显示第十行：
-            Line 10
-        </pre>
-<p><span>说明：</span>1. 如果文件少于十行，你应当输出什么？</p>
-<p><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>2. 至少有三种不同的解法，请尝试尽可能多的方法来解题。</p>
-
-      </el-card>
-      <el-card class="question">
-        <h3 style="margin-bottom: 30px">2.分配零钱</h3>
+        <h3 style="margin-bottom: 30px">1.分配零钱</h3>
         <p>
           <span>题目描述：</span>
           给你一个整数 money ，表示你总共有的钱数（单位为美元）和另一个整数 children ，表示你要将钱分配给多少个儿童。
@@ -71,7 +45,7 @@
         >
       </el-card>
       <el-card class="question">
-        <h3 style="margin-bottom: 30px">3. 罗马数字转换为整数  </h3>
+        <h3 style="margin-bottom: 30px">2. 罗马数字转换为整数  </h3>
         <p>
           <span>题目要求: </span
           >罗马数字中，较小的数字写在在较大的数字右边。
@@ -100,7 +74,7 @@
         </pre>
       </el-card>
       <el-card class="question">
-        <h3 style="margin-bottom: 30px">4. 判断括号合法性 </h3>
+        <h3 style="margin-bottom: 30px">3. 判断括号合法性 </h3>
         <p>
           <span>题目描述: </span
           >输入一段由[],{},()六种括号组成的字符串，通过程序判断该字符串是否合法，即是否每个括号都能找到与之匹配的另一半，输出true或false。  
@@ -122,7 +96,7 @@
         </pre>
       </el-card>
       <el-card class="question" style="margin-bottom: 30px">
-        <h3 style="margin-bottom: 30px">5. 学生管理系统</h3>
+        <h3 style="margin-bottom: 30px">4. 学生管理系统</h3>
         <p>
           <span>题目描述：</span>以使用到ArrayList数据类型为前提，设计一个简易的学生管理系统。包括“添加学生，删除学生，查询学生，退出”四个功能。
 <p><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp要求:&nbsp&nbsp</span>①学生对象为student类 ②student类包括id，name，age三个成员变量和标准成员方法  </p>
@@ -130,13 +104,40 @@
       </el-card>
       <el-card class="question" style="margin-bottom: 30px">
         <h3 style="margin-bottom: 30px">
-          6. 文件的加密和解密
+          5. 文件的加密和解密
         </h3>
         <p>
           <span>题目描述：</span>
           希望你能用IO的知识对一个已有TXT文件进行加密并写到新的文件中，再对新的文件进行解密并打印文件内容，加密的方法由你自己决定。
         </p>
        
+      </el-card>
+      <el-card class="question">
+        <h3 style="margin-bottom: 30px">6. 打印第十行</h3>
+        <p>你可以试着用shell脚本或者所学的编程语言来完成这道题：</p>
+        <p> <span>题目描述: </span
+          >给定一个文本文件 file.txt，请只打印这个文件中的第十行。</p>
+        <pre>
+
+            示例:
+            假设 file.txt 有如下内容：
+            Line 1
+            Line 2
+            Line 3
+            Line 4
+            Line 5
+            Line 6
+            Line 7
+            Line 8
+            Line 9
+            Line 10
+
+            你的脚本应当显示第十行：
+            Line 10
+        </pre>
+<p><span>说明：</span>1. 如果文件少于十行，你应当输出什么？</p>
+<p><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>2. 至少有三种不同的解法，请尝试尽可能多的方法来解题。</p>
+
       </el-card>
     </el-card>
   </template>
@@ -188,11 +189,11 @@ export default {
   .questionbox {
     width: auto; /* 在小屏幕上设置宽度为100% */
     margin-left: 0;
-      img {
-        width: 80%;
-        margin-left: 10%;
-        height: 200px;
-      }
+    img {
+      width: 80%;
+      margin-left: 10%;
+      height: 200px;
+    }
   }
 }
 </style>

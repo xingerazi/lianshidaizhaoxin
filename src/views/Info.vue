@@ -123,6 +123,7 @@
                     :modal="false"
                     :append-to-body="true"
                   >
+                  <p>学习路线在招新题中，请自行参考</p>
                   </el-dialog>
                 </el-descriptions-item>
               </el-descriptions>
@@ -294,7 +295,81 @@
                     :visible.sync="dialogTableVisible4"
                     :modal="false"
                     :append-to-body="true"
-                  >
+            
+
+                    >
+                  <h2 id="-">学习内容</h2>
+                  <p>在接下来一个月的招新时间内，同学们可以从这几个方面学习后端的内容：</p>
+                  <ol>
+                  <li>语言基础</li>
+                  <li>Linux操作基础</li>
+                  </ol>
+                  <p>以编程语言基础为主，顺带了解Linux的基本操作。当然，你可以直接在Linux上开始你的学习。</p>
+                  <h2 id="-">学习路线</h2>
+                  <h3 id="-">了解后端</h3>
+                  <p>后端是干什么的？后端在网页开发中的主要职责是什么？在开始学习之前，了解后端的基础概念将有助于之后的学习。</p>
+                  <h3 id="-">语言基础部分</h3>
+                  <h4 id="-">选择编程语言</h4>
+                  <p>各种语言都可以进行后端开发。在语言基础部分，你可以选择Java、C++、Go中的任意一种编程语言来开始你的学习。招新题是语言无关的，所以请放心选择。当然，在进行选择之前，最好了解一下这些编程语言各自的特性，以帮助你做出更明智的选择。</p>
+                  <ul>
+                  <li><a href="https://www.runoob.com/java/java-tutorial.html">Java 教程 | 菜鸟教程 (runoob.com)</a></li>
+                  <li><p><a href="https://www.runoob.com/cplusplus/cpp-tutorial.html">C++ 教程 | 菜鸟教程 (runoob.com)</a></p>
+                  </li>
+                  <li><p><a href="https://www.runoob.com/go/go-tutorial.html">Go 语言教程 | 菜鸟教程 (runoob.com)</a></p>
+                  </li>
+                  </ul>
+                  <h4 id="-ide">选择一个顺手的代码编辑器|IDE</h4>
+                  <p>如果不想用记事本编程，那就选择一个好用的代码编辑器或者IDE吧。</p>
+                  <p>最好用的代码编辑器，不过配置可能会花不少脑筋：</p>
+                  <ul>
+                  <li><a href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a></li>
+                  </ul>
+                  <p>不想动脑筋的话，Jetbrains的各种IDE是你的又一个老师：</p>
+                  <ul>
+                  <li><a href="https://www.jetbrains.com/zh-cn/idea/">IntelliJ IDEA – 领先的 Java 和 Kotlin IDE (jetbrains.com)</a></li>
+                  <li><a href="https://www.jetbrains.com/clion/">CLion: A Cross-Platform IDE for C and C++ by JetBrains</a></li>
+                  <li><a href="https://www.jetbrains.com/go/">GoLand by JetBrains: More than just a Go IDE</a></li>
+                  </ul>
+                  <h3 id="linux-">Linux操作基础部分</h3>
+                  <p>熟悉了解Linux当然是越早越好。关于Linux，你可以从这几个方面进行了解：</p>
+                  <ol>
+                  <li>Linux的操作指令</li>
+                  <li>Linux的重要概念</li>
+                  <li>使用shell脚本</li>
+                  </ol>
+                  <p><a href="https://www.runoob.com/linux/linux-tutorial.html">Linux 教程 | 菜鸟教程 (runoob.com)</a></p>
+                  <p>实操才是最好的学习方式。你可以用这样几种方式上手使用Linux系统：</p>
+                  <ol>
+                  <li><p>在虚拟机上安装Linux 下载 <a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">VMware Workstation Pro | CN</a></p>
+                  </li>
+                  <li><p>使用wsl在windows上安装Linux <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install">安装 WSL | Microsoft Learn</a></p>
+                  </li>
+                  <li><p>一台远程Linux服务器，哪个便宜选哪个，资本家的羊毛就要狠狠地薅：</p>
+                  <p> <a href="https://cloud.tencent.com/">腾讯云 产业智变·云启未来 - 腾讯 (tencent.com)</a> </p>
+                  <p><a href="https://www.aliyun.com/?spm=5176.28340310.J_4VYgf18xNlTAyFFbOuOQe.1.66355027KbcesU">阿里云-计算，为了无法计算的价值 (aliyun.com)</a></p>
+                  <p><a href="https://www.huaweicloud.com/">共建智能世界云底座-华为云 (huaweicloud.com)</a></p>
+                  </li>
+                  </ol>
+                  <h2 id="-">一些建议</h2>
+                  <ul>
+                  <li><p>关于学习笔记</p>
+                  <ul>
+                  <li>Markdown是一个很好的记录形式</li>
+                  <li>Typora很好用，如果想支持国产软件可以买一个</li>
+                  </ul>
+                  </li>
+                  <li><p>学会使用搜索引擎也是很重要的，千万别被广告骗了！！！</p>
+                  </li>
+                  <li><p>如果想看视频的话就是B站.</p>
+                  </li>
+                  <li><p>如果想通过文档学习的话，菜鸟可以快速入门.</p>
+                  </li>
+                  <li>耐下性子看看英文文档也是很推荐的.</li>
+                  </ul>
+                  <h2 id="-">关于提交方式</h2>
+                  <p>招新题量力而行，我们主要想看到同学们的学习积极性.</p>
+                  <p>将所有要提交的内容，以压缩包的形式，命名为后端-学号-姓名，发至邮箱lxx18912405977@outlook.com.</p>
+
                   </el-dialog>
                 </el-descriptions-item>
               </el-descriptions>
@@ -328,12 +403,12 @@
                     icon="el-icon-search"
                     type="primary"
                     plain
-                    @click="dialogTableVisible1 = true"
+                    @click="dialogTableVisible5 = true"
                     >学习路线</el-button
                   >
                   <el-dialog
                     title="区块链&网络学习路线"
-                    :visible.sync="dialogTableVisible1"
+                    :visible.sync="dialogTableVisible5"
                     :modal="false"
                     :append-to-body="true"
                   >
@@ -416,15 +491,16 @@
                     icon="el-icon-search"
                     type="primary"
                     plain
-                    @click="dialogTableVisible2 = true"
+                    @click="dialogTableVisible6 = true"
                     >学习路线</el-button
                   >
                   <el-dialog
                     title="机器学习路线"
-                    :visible.sync="dialogTableVisible2"
+                    :visible.sync="dialogTableVisible6"
                     :modal="false"
                     :append-to-body="true"
                   >
+                  <p>学习路线在招新题中，请自行参考</p>
                   </el-dialog>
                 </el-descriptions-item>
               </el-descriptions>
@@ -453,13 +529,13 @@
                       icon="el-icon-search"
                       type="primary"
                       plain
-                      @click="dialogTableVisible3 = true"
+                      @click="dialogTableVisible7 = true"
                       style="margin-top: 90px;"
                       >学习路线</el-button
                     >
                     <el-dialog
                       title="前端学习路线"
-                      :visible.sync="dialogTableVisible3"
+                      :visible.sync="dialogTableVisible7"
                       :modal="false"
                       :append-to-body="true"
                     >
@@ -588,15 +664,88 @@
                       icon="el-icon-search"
                       type="primary"
                       plain
-                      @click="dialogTableVisible4 = true"
+                      @click="dialogTableVisible8 = true"
                       >学习路线</el-button
                     >
                     <el-dialog
                       title="后端学习路线"
-                      :visible.sync="dialogTableVisible4"
+                      :visible.sync="dialogTableVisible8"
                       :modal="false"
                       :append-to-body="true"
+
                     >
+                    <h2 id="-">学习内容</h2>
+                    <p>在接下来一个月的招新时间内，同学们可以从这几个方面学习后端的内容：</p>
+                    <ol>
+                    <li>语言基础</li>
+                    <li>Linux操作基础</li>
+                    </ol>
+                    <p>以编程语言基础为主，顺带了解Linux的基本操作。当然，你可以直接在Linux上开始你的学习。</p>
+                    <h2 id="-">学习路线</h2>
+                    <h3 id="-">了解后端</h3>
+                    <p>后端是干什么的？后端在网页开发中的主要职责是什么？在开始学习之前，了解后端的基础概念将有助于之后的学习。</p>
+                    <h3 id="-">语言基础部分</h3>
+                    <h4 id="-">选择编程语言</h4>
+                    <p>各种语言都可以进行后端开发。在语言基础部分，你可以选择Java、C++、Go中的任意一种编程语言来开始你的学习。招新题是语言无关的，所以请放心选择。当然，在进行选择之前，最好了解一下这些编程语言各自的特性，以帮助你做出更明智的选择。</p>
+                    <ul>
+                    <li><a href="https://www.runoob.com/java/java-tutorial.html">Java 教程 | 菜鸟教程 (runoob.com)</a></li>
+                    <li><p><a href="https://www.runoob.com/cplusplus/cpp-tutorial.html">C++ 教程 | 菜鸟教程 (runoob.com)</a></p>
+                    </li>
+                    <li><p><a href="https://www.runoob.com/go/go-tutorial.html">Go 语言教程 | 菜鸟教程 (runoob.com)</a></p>
+                    </li>
+                    </ul>
+                    <h4 id="-ide">选择一个顺手的代码编辑器|IDE</h4>
+                    <p>如果不想用记事本编程，那就选择一个好用的代码编辑器或者IDE吧。</p>
+                    <p>最好用的代码编辑器，不过配置可能会花不少脑筋：</p>
+                    <ul>
+                    <li><a href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a></li>
+                    </ul>
+                    <p>不想动脑筋的话，Jetbrains的各种IDE是你的又一个老师：</p>
+                    <ul>
+                    <li><a href="https://www.jetbrains.com/zh-cn/idea/">IntelliJ IDEA – 领先的 Java 和 Kotlin IDE (jetbrains.com)</a></li>
+                    <li><a href="https://www.jetbrains.com/clion/">CLion: A Cross-Platform IDE for C and C++ by JetBrains</a></li>
+                    <li><a href="https://www.jetbrains.com/go/">GoLand by JetBrains: More than just a Go IDE</a></li>
+                    </ul>
+                    <h3 id="linux-">Linux操作基础部分</h3>
+                    <p>熟悉了解Linux当然是越早越好。关于Linux，你可以从这几个方面进行了解：</p>
+                    <ol>
+                    <li>Linux的操作指令</li>
+                    <li>Linux的重要概念</li>
+                    <li>使用shell脚本</li>
+                    </ol>
+                    <p><a href="https://www.runoob.com/linux/linux-tutorial.html">Linux 教程 | 菜鸟教程 (runoob.com)</a></p>
+                    <p>实操才是最好的学习方式。你可以用这样几种方式上手使用Linux系统：</p>
+                    <ol>
+                    <li><p>在虚拟机上安装Linux 下载 <a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">VMware Workstation Pro | CN</a></p>
+                    </li>
+                    <li><p>使用wsl在windows上安装Linux <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install">安装 WSL | Microsoft Learn</a></p>
+                    </li>
+                    <li><p>一台远程Linux服务器，哪个便宜选哪个，资本家的羊毛就要狠狠地薅：</p>
+                    <p> <a href="https://cloud.tencent.com/">腾讯云 产业智变·云启未来 - 腾讯 (tencent.com)</a> </p>
+                    <p><a href="https://www.aliyun.com/?spm=5176.28340310.J_4VYgf18xNlTAyFFbOuOQe.1.66355027KbcesU">阿里云-计算，为了无法计算的价值 (aliyun.com)</a></p>
+                    <p><a href="https://www.huaweicloud.com/">共建智能世界云底座-华为云 (huaweicloud.com)</a></p>
+                    </li>
+                    </ol>
+                    <h2 id="-">一些建议</h2>
+                    <ul>
+                    <li><p>关于学习笔记</p>
+                    <ul>
+                    <li>Markdown是一个很好的记录形式</li>
+                    <li>Typora很好用，如果想支持国产软件可以买一个</li>
+                    </ul>
+                    </li>
+                    <li><p>学会使用搜索引擎也是很重要的，千万别被广告骗了！！！</p>
+                    </li>
+                    <li><p>如果想看视频的话就是B站.</p>
+                    </li>
+                    <li><p>如果想通过文档学习的话，菜鸟可以快速入门.</p>
+                    </li>
+                    <li>耐下性子看看英文文档也是很推荐的.</li>
+                    </ul>
+                    <h2 id="-">关于提交方式</h2>
+                    <p>招新题量力而行，我们主要想看到同学们的学习积极性.</p>
+                    <p>将所有要提交的内容，以压缩包的形式，命名为后端-学号-姓名，发至邮箱lxx18912405977@outlook.com.</p>
+
                     </el-dialog>
                   </el-descriptions-item>
                 </el-descriptions>
@@ -616,6 +765,10 @@ export default {
       dialogTableVisible2:false,
       dialogTableVisible3:false,
       dialogTableVisible4:false,
+      dialogTableVisible5:false,
+      dialogTableVisible6:false,
+      dialogTableVisible7:false,
+      dialogTableVisible8:false,
     };
   },
 };
@@ -625,7 +778,9 @@ export default {
 img {
   margin-right: 20px;
 }
-
+a{
+  color: #495293;
+}
 .el-button {
   margin: 10px;
 }
@@ -740,7 +895,7 @@ img {
 .txt{
   font-size: 16px;
 }
-   @media screen and (max-width:768px) {
+   @media screen and (max-width:1024px) {
     .infoPC{
       display: none;
     }
