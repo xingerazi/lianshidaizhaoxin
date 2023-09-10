@@ -13,9 +13,15 @@
         <el-card shadow="hover">
                 <h1 class="content-title">关于我们<img class="icon" src="../assets/direct/p9.svg" alt="research directions"></h1>
                 <div class="text">链时代工作室 由主攻量子网络安全方向的王老师和现已直博北大的邱学长共同创建，成立于2017年，是信软学院最年轻的工作室之一。 经过六年不断地壮大，有许多优秀的学长学姐走出链时代，走出成电，在各自的专业领域发光发热。 工作室17级—22级成员约有100余人，其中多人去国内外顶尖大学进修，亦有多人拿到阿里、百度、华为、字节跳动等互联网大厂的offer。</div>     
-                  <el-carousel :interval="3000" type="card" height="18vw">
+                <el-carousel class="carousel1" :interval="3000" type="card" height="18vw">
+                <el-carousel-item v-for="item in imgList" :key="item.id">
+                  <img :src="item.url" width="100%" height="100%" alt="">
+                </el-carousel-item>
+                </el-carousel>
+
+                <el-carousel class="carousel2" indicator-position="outside" height="40vw" style="display: none;">
                   <el-carousel-item v-for="item in imgList" :key="item.id">
-                    <img :src="item.url" width="100%" height="100%" alt="">
+                  <img :src="item.url" width="100%" height="100%" alt="">
                   </el-carousel-item>
                 </el-carousel>
         </el-card>
@@ -26,7 +32,6 @@
                    <div id="imgcons1"  class="wow animate__zoomInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><img src="../assets/direct/js.jpg" alt="" class="imgcard1"><div class="imgtxt">前端</div></div>
                    <div id="imgcons1"  class="wow animate__zoomInLeft" data-wow-duration="1s" data-wow-delay="1s"><img src="../assets/direct/machine.png" alt="" class="imgcard1"><div class="imgtxt">机器学习</div></div>
                    <div id="imgcons1"  class="wow animate__zoomInLeft" data-wow-duration="1s" data-wow-delay="1.5s"><img src="../assets/direct/java.jpg" alt="" class="imgcard1"><div class="imgtxt">后端</div></div>
-              
                 </div>                    
         </el-card>
     </div>
@@ -63,14 +68,17 @@ export default {
       ]
     };
   },
-  methods: {},
+  methods: {
+  },     
   mounted() {
-    new this.$wow.WOW().init()
+    new this.$wow.WOW().init();
   },
 };
 </script>
 
 <style lang="less" scoped>
+
+
 .home {
   .bgimage {
     background-image: url(../assets/bg.png);
@@ -95,8 +103,8 @@ export default {
       height: 300px;
       backdrop-filter: blur(8px);
     }
-  .el-card{
-    margin: 30px 300px 0px 300px;
+    .el-card{
+    margin: 30px 10% 0px 10% !important;
   }
   h1{
    font-size:40px; 
@@ -172,7 +180,8 @@ export default {
   font-size:20px;
  }
  #imgcons1{
-  flex: 1;
+  // flex: 1;
+  width: 24%;
   margin: 10px;
  }
  .p1, .p2, .p3, .p4{
@@ -224,4 +233,51 @@ export default {
         opacity: 0;
     }
 }
+@media screen and (max-width :768px){
+  
+}
+@media screen and (max-width : 400px) {
+  .title{
+    margin-left:calc(50% - 135px);
+    h3{
+      font-size: 45px;
+    }
+  } 
+  .el-card{
+    margin: 30px 10% 0px 10% !important;
+  }  .text{
+    margin: 0 !important;
+    font-size: 15px !important; 
+  }
+  .bgimage{
+    height: 150px !important;
+  }
+  .bgimage::before{   
+    height: 150px !important;
+  }
+  .imgcon{
+    flex-wrap: wrap;
+  }
+  #imgcons1{
+    width: 40% ;
+  }
+  .carousel1{
+    display: none;
+  }
+  .carousel2{
+    display: block !important;
+  }
+  .p1,.p2,.p3{
+    height: 100px;
+    width: 100px;
+  }
+  .p4{
+
+    display: none;
+  }
+  .p3{
+    top: 800px;
+  }
+}
+
 </style>

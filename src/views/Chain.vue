@@ -171,4 +171,19 @@ export default {
     color: #999;
   }
 }
+@media (max-width: 767px) {
+  .questionbox {
+    width: auto; /* 在小屏幕上设置宽度为100% */
+    margin-left: 0;
+    .animal{
+    display: block;
+    img{
+      width: 60%;
+    margin-left: 20%;
+    height: 300px;
+    }
+  }
+  }
+
+}
 </style>

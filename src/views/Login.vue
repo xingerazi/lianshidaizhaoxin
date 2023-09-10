@@ -9,10 +9,10 @@
     >
       <h1>欢迎进入链时代</h1>
       <h3 class="login_title">登录</h3>
-      <el-form-item label="用户名" prop="username" label-width="75px">
+      <el-form-item label="用户名" prop="username" label-width="70px">
         <el-input v-model="form.username" placeholder="请输入账号"></el-input>
       </el-form-item>
-      <el-form-item label="密码" prop="password" label-width="75px">
+      <el-form-item label="密码" prop="password" label-width="70px">
         <el-input
           type="password"
           v-model="form.password"
@@ -133,6 +133,25 @@ body {
   .el-button {
     margin-left: 60px;
     margin-right: 20px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .login_container {
+    width: 85%;
+    padding: 0;
+    h1{
+      text-align: center;
+      font-size: 19px;
+    }
+    .el-form-item {
+      margin-left: 7%;
+    }
+    .el-input{
+      width: 70%;
+    }
+    .el-button{
+      margin-left: 30px;
+    }
   }
 }
 </style>

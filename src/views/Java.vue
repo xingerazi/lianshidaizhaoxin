@@ -48,23 +48,24 @@
             <p> <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>2 <= children <= 30</p>
         <pre>
 
-            示例 1：
+    示例 1：
 
-            输入：money = 20, children = 3
-            输出：1
+    输入：money = 20, children = 3
+    输出：1
 
-            解释：
-            最多获得 8 美元的儿童数为 1 。一种分配方案为：
-            - 给第一个儿童分配 8 美元。
-            - 给第二个儿童分配 9 美元。
-            - 给第三个儿童分配 3 美元。
-            没有分配方案能让获得 8 美元的儿童数超过 1 。
+    解释：
+    最多获得 8 美元的儿童数为 1 。
+    一种分配方案为：
+    - 给第一个儿童分配 8 美元。
+    - 给第二个儿童分配 9 美元。
+    - 给第三个儿童分配 3 美元。
+    没有分配方案能让获得 8 美元的儿童数超过1 
 
-            示例 2：
+    示例 2：
             
-            输入：money = 16, children = 2                       
-            输出：2                                              
-            解释：每个儿童都可以获得 8 美元。 
+    输入：money = 16, children = 2                       
+    输出：2                                              
+    解释：每个儿童都可以获得 8 美元。 
                                     
   </pre
         >
@@ -107,17 +108,17 @@
 
         <pre>
   
-          样例输入 #1        
-          {[]}
-  
-          样例输出 #1 
-          true
+      样例输入 #1        
+      {[]}
 
-          样例输入 #2       
-          {[{}}]
-  
-          样例输出 #2
-          false
+      样例输出 #1 
+      true
+
+      样例输入 #2       
+      {[{}}]
+
+      样例输出 #2
+      false
         </pre>
       </el-card>
       <el-card class="question" style="margin-bottom: 30px">
@@ -181,6 +182,17 @@ export default {
     font-size: 15px;
     font-weight: 550;
     color: #999;
+  }
+}
+@media (max-width: 767px) {
+  .questionbox {
+    width: auto; /* 在小屏幕上设置宽度为100% */
+    margin-left: 0;
+      img {
+        width: 80%;
+        margin-left: 10%;
+        height: 200px;
+      }
   }
 }
 </style>

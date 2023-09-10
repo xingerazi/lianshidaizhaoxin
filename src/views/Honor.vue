@@ -14,7 +14,7 @@
     <br>
     <h1>链时代近年荣誉墙<img src="../assets/direct/p8.svg" alt=""></h1>
   </div>
-  <div class="block">
+  <div class="block1">
     <el-timeline >
       <el-timeline-item timestamp="2020" placement="top"  size="large" icon="el-icon-medal" type="info">
         <el-card class="wow animate__fadeInBottomRight" data-wow-duration="1s" data-wow-delay="0s">
@@ -81,8 +81,8 @@
       </el-timeline-item>
     </el-timeline>
   </div>
-  <div class="imgcon">
-    <div class="title"><div></div>照片墙</div>
+  <div class="imgcon" id="imgconPC">
+    <div class="title"><div></div>照片墙<p>(部分展示)</p></div>
     <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s">
       <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/大创省金-高豪.jpg" alt=""></div></el-col>
       <el-col :span="6"><div class="grid-content bg-purple"><img src="../assets/honor/获奖证书 SCJSJ202301030074-4.png" alt=""></div></el-col>
@@ -113,6 +113,50 @@
       <el-col :span="6"><div class="grid-content2 bg-purple"><img src="../assets/honor/蓝桥杯省2-郭翔.jpg" alt=""></div></el-col>
       <el-col :span="6"><div class="grid-content2 bg-purple"><img src="../assets/honor/蓝桥杯省2-陈毅婷.jpg" alt=""></div></el-col>
     </el-row>
+    </div>
+
+    <div class="imgcon" id="imgconMobile" style="display: none;">
+    <div class="title"><div></div>照片墙<p>(部分展示)</p></div>
+    <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/大创省金-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/获奖证书 SCJSJ202301030074-4.png" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省级特等奖-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省级特等奖-陈津旭.jpg" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/三创省三-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省一-罗家逸.png" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/数学竞赛省二-王柯阳.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/2023060474.png" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省三-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/计设省二-周泽林庆.png" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInleft" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/服创省三-陈昊.png" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content bg-purple"><img src="../assets/honor/服创省三-周泽林庆.png" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/专利-陈昊.png" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/优秀指导教师-李美蓉.jpg" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0s">
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/微信小程序大赛国三-高豪.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/微信小程序大赛省一-高豪.jpg" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0s" >
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/网挑国三-王杰.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/网挑省二-陈昊.jpeg" alt=""></div></el-col>
+    </el-row>
+    <el-row :gutter="20" class="wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0s" >
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/蓝桥杯省2-郭翔.jpg" alt=""></div></el-col>
+      <el-col :span="12"><div class="grid-content2 bg-purple"><img src="../assets/honor/蓝桥杯省2-陈毅婷.jpg" alt=""></div></el-col>
+    </el-row>
     <p class="end wow animate__fadeInUp" data-wow-duration="3s" data-wow-delay="0s">期待你的加入</p>
   </div>
 </div>
@@ -133,9 +177,10 @@ export default {
     margin: 10px;
     font-family: Georgia, "Cambria", serif;
   }
-  .block{
+  .block1{
     margin:50px 200px 0 200px ;
   }
+  
   .el-card{
     box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
   }
@@ -284,4 +329,17 @@ export default {
   padding-bottom: 30px;
   font-weight: bold;
 }
+@media screen and (max-width: 768px){
+    .block1{
+      margin:0;
+    }
+    #imgconPC{
+      margin:0 30px 0 30px !important;
+      display: none;
+    }
+    #imgconMobile{
+      margin:0 30px 0 30px !important;
+      display:block !important;
+    }
+  }
 </style>

@@ -1,35 +1,61 @@
 <template>
-  <div class="nav">
-    <div class="title" style="margin-left: 50px">
-      <h3>链时代工作室</h3>
-    </div>
-    <div style="display: flex; margin-left: 100px">
-      <el-menu
-        :default-active="activeIndex"
-        class="el-menu-demo"
-        mode="horizontal"
-      >
-        <el-menu-item
-          v-for="item in maininfo"
-          :index="item.index"
-          :key="item.index"
-          @click="changePage(item)"
-          >{{ item.name }}</el-menu-item
+  <div>
+    <div class="nav" v-if="!isMobile">
+      <div class="title" style="margin-left: 50px">
+        <h3>链时代工作室</h3>
+      </div>
+      <div style="display: flex; margin-left: 100px">
+        <el-menu
+          :default-active="activeIndex"
+          class="el-menu-demo"
+          mode="horizontal"
         >
-      </el-menu>
-      <el-dropdown class="imgbox">
-        <span
-          class="el-dropdown-link"
-          style="position: relative; top: 60px; right: 20px"
-        >
-          <div style="width: 80px; height: 30px">遇到问题？</div>
-        </span>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item
-            >若网页出现bug或问题，请联系群内前端学长❤</el-dropdown-item
+          <el-menu-item
+            v-for="item in maininfo"
+            :index="item.index"
+            :key="item.index"
+            @click="changePage(item)"
+            >{{ item.name }}</el-menu-item
           >
-        </el-dropdown-menu>
-      </el-dropdown>
+        </el-menu>
+        <el-dropdown class="imgbox">
+          <span
+            class="el-dropdown-link"
+            style="position: relative; top: 60px; right: 20px"
+          >
+            <div style="width: 80px; height: 30px">遇到问题？</div>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item
+              >若网页出现bug或问题，请联系群内前端学长❤</el-dropdown-item
+            >
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
+    </div>
+    <div class="nav" v-else>
+      <div
+        class="title"
+        style="margin-left: 20px; min-width: 70px; line-height: 50px"
+      >
+        <h3>链时代</h3>
+      </div>
+      <div class="menu" style="padding-top : 30px;">
+        <el-dropdown>
+          <span class="el-dropdown-link">
+            了解更多<i class="el-icon-arrow-down el-icon--right"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item
+              v-for="item in maininfo"
+              :index="item.index"
+              :key="item.index"
+              @click.native="logit(item)"
+              >{{ item.name }}</el-dropdown-item
+            >
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
     </div>
   </div>
 </template>
@@ -61,16 +87,36 @@ export default {
           label: "honor",
         },
       ],
+      isMobile: false,
     };
+  },
+  created() {
+    window.addEventListener("resize", this.updateIsMobile);
+    this.updateIsMobile();
   },
   methods: {
     changePage(item) {
-      // console.log(item.label);
-      // console.log(this.$route.path);
+      console.log(item.label);
+      console.log(this.$route.path);
       if (this.$route.path !== `/${item.label}`) {
         this.$router.push(item.label);
       }
     },
+    updateIsMobile() {
+      // 根据窗口大小设置 isMobile 变量
+      this.isMobile = window.innerWidth <= 767;
+    },
+    logit(item) {
+      console.log(item.label);
+      console.log(this.$route.path);
+      if (this.$route.path !== `/${item.label}`) {
+        this.$router.push(item.label);
+      }
+    },
+  },
+  beforeDestroy() {
+    // 在组件销毁前移除窗口大小变化的监听器
+    window.removeEventListener("resize", this.updateIsMobile);
   },
 };
 </script>
@@ -115,5 +161,9 @@ export default {
     // top: 50px;
     right: -330px;
   }
+  // .menu{
+  //   margin-top: 30px;
+  //   margin-right: 70px;
+  // }
 }
 </style>

@@ -76,6 +76,7 @@ export default {
 
   methods: {
     submitit() {
+      console.log(1);
       this.$refs.joinform.validate((valid) => {
         if (valid) {
           http
@@ -96,6 +97,7 @@ export default {
               }
             })
             .catch((err) => {
+              console.log(err);
               this.$message.error("系统繁忙");
             });
         } else {
@@ -145,4 +147,24 @@ export default {
     margin-right: 20px;
   }
 }
+@media screen and (max-width: 568px) {
+  .login_container {
+    width: 87%;
+    padding: 0;
+    h1{
+      text-align: center;
+      font-size: 19px;
+    }
+    .el-form-item {
+      margin-left: 7%;
+    }
+    .el-input{
+      width: 70%;
+    }
+    .el-button{
+      margin-left: 30px;
+    }
+  }
+}
+</style>
 </style>

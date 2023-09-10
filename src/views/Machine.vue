@@ -16,7 +16,7 @@
           自主</span
         >
         的方式改善它们的学习。”</strong
-      >那么机器学习的专家们又如何让这个和人们下意识主关思维不同的想法变为可能呢?大概是从线性,逻辑回归到SVM算法再到重换新生的深度学习,我想通过下面的这些题目,你将有所了解.最后的最后就是why?这大概源于一个个灵感迸发吧.想想看你所接触这么久的数学,物理等等等等,或多或少都具有些许宗教性,些许可知论,但机器学习的学者们,便早早跳出这个思维,我们试着创造不同的机器,使其具备自主改善它们的学习,<span>我们创造自己的“宗教”,我们让机器自我可知.</span>😎 
+      >那么机器学习的专家们又如何让这个和人们下意识主关思维不同的想法变为可能呢?大概是从线性,逻辑回归到SVM算法再到重换新生的深度学习,我想通过下面的这些题目,你将有所了解.最后的最后就是why?这大概源于一个个灵感迸发吧.想想看你所接触这么久的数学,物理等等等等,或多或少都具有些许宗教性,些许可知论,但机器学习的学者们,便早早跳出这个思维,我们试着创造不同的机器,使其具备自主改善它们的学习,<span>我们创造自己的“宗教”,我们让机器自我可知.</span>😎
     </p>
     <el-divider></el-divider>
     <el-card class="question">
@@ -39,7 +39,8 @@
         >
       </p>
       <p>
-        2.阅读但<span>不限于</span> 我们所给出的资料,<span>尽可能多的</span> ==了解机器学习的相关概念(可以参照后续题目进行关键词搜索)，并编写markdown格式的文件记录你的学习笔记.如:
+        2.阅读但<span>不限于</span> 我们所给出的资料,<span>尽可能多的</span>
+        ==了解机器学习的相关概念(可以参照后续题目进行关键词搜索)，并编写markdown格式的文件记录你的学习笔记.如:
       </p>
       <ul>
         <li>机器学习发展史?</li>
@@ -85,7 +86,9 @@
         </li>
         <li>
           <p>
-            推荐一个知乎博主 <span>‘化简可得’</span>,他的文章都很通俗易懂(线性回归,逻辑回归,svm…都有涵盖),况且他的文章在csdn要开会员(😾狠狠白嫖😾)
+            推荐一个知乎博主
+            <span>‘化简可得’</span
+            >,他的文章都很通俗易懂(线性回归,逻辑回归,svm…都有涵盖),况且他的文章在csdn要开会员(😾狠狠白嫖😾)
           </p>
           <p>
             <a href="https://www.zhihu.com/people/huajiankede"
@@ -289,10 +292,10 @@
 
 
         <span class="hljs-comment"># 定义逻辑回归训练模型</span>
-        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fit</span><span class="hljs-params">(x, y, eta= ___<span class="hljs-number">_</span>)</span></span>:   (<span class="hljs-number">5</span>)      <span class="hljs-comment"># eta为学习率</span>
-            n_iters = ___<span class="hljs-number">_</span>          (<span class="hljs-number">6</span>)      <span class="hljs-comment">#n_iters为训练次数</span>
-            theta1 = <span class="hljs-number">1.0</span>  <span class="hljs-comment"># 随机生成一个theta1</span>
-            theta2 = -<span class="hljs-number">1.0</span>  <span class="hljs-comment"># 随机生成一个theta2</span>
+        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fit</span><span class="hljs-params">(x, y, eta= ___<span class="hljs-number">_</span>)</span></span>: (<span class="hljs-number">5</span>) <span class="hljs-comment">#eta为学习率</span>
+            n_iters = ___<span class="hljs-number">_</span> (<span class="hljs-number">6</span>) <span class="hljs-comment">#n_iters为训练次数</span>
+            theta1 = <span class="hljs-number">1.0</span><span class="hljs-comment"> #随机生成一个theta1</span>
+            theta2 = -<span class="hljs-number">1.0</span><span class="hljs-comment"> #随机生成一个theta2</span>
             b = <span class="hljs-number">0</span>.<span class="hljs-number">0</span> 
             <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n_iters):
                 <span class="hljs-comment">#预测逻辑函数,即计算Y_hat</span>
@@ -309,7 +312,8 @@
         <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decision</span><span class="hljs-params">(x)</span></span>:
             <span class="hljs-keyword">return</span> ______<span class="hljs-number">_</span>(<span class="hljs-number">9</span>)
 
-        <span class="hljs-comment"># 计算决策边界,并完成可视化,画出数据散点图与决策边界</span>
+        <span class="hljs-comment"># 计算决策边界</span>
+        <span class="hljs-comment"># 完成可视化画出数据散点图与决策边界</span>
         ____<span class="hljs-number">_</span>(<span class="hljs-number">10</span>)
         </code></pre>
       <h3 id="4-3-">4.3相关资料及数据💡</h3>
@@ -393,7 +397,8 @@
             w2: 输出层权重参数weights_2
             b1: 隐藏层偏置参数bias_1
             b2: 输出层偏置参数bias_2
-            设计思路:w,b的规模应当满足前向传播计算中矩阵乘法的计算要求
+            设计思路:w,b的规模应当满足前向传播
+            计算中矩阵乘法的计算要求
             """</span>
             parameters = {
                 <span class="hljs-string">'w1'</span>:
@@ -401,7 +406,8 @@
                 <span class="hljs-string">'b1'</span>:
                 <span class="hljs-string">'b2'</span>:
             }
-            <span class="hljs-keyword">return</span> parameters  <span class="hljs-comment"># 该函数返回初始化好的权重参数字典</span>
+            <span class="hljs-keyword">return</span> parameters  
+            <span class="hljs-comment"># 该函数返回初始化好的权重参数字典</span>
 
         <span class="hljs-comment"># 本函数为前向传播</span>
         <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">feed_forward</span><span class="hljs-params">(parameters, X)</span>:</span>
@@ -413,7 +419,8 @@
             """</span>
 
 
-            <span class="hljs-keyword">return</span> parameters  <span class="hljs-comment"># 该函数返回通过前向传播求出的y_pred字典</span>
+            <span class="hljs-keyword">return</span> parameters  
+            <span class="hljs-comment"># 该函数返回通过前向传播求出的y_pred字典</span>
 
         <span class="hljs-comment"># 本函数为反向传播求梯度</span>
         <span class="hljs-comment"># 通过链式法则求出梯度</span>
@@ -428,7 +435,8 @@
             """</span>
 
 
-            <span class="hljs-keyword">return</span> grad  <span class="hljs-comment"># 该函数返回通过反向传播求出的梯度字典</span>
+            <span class="hljs-keyword">return</span> grad  
+         <span class="hljs-comment"># 该函数返回通过反向传播求出的梯度字典</span>
 
         <span class="hljs-comment"># 本函数通过梯度下降更新参数</span>
         <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">(grad, parameters, lr)</span>:</span>
@@ -687,15 +695,15 @@
       <p>Q1:学习yolo算法，了解其基本结构和实现流程。</p>
       <p>Q2:比较yolo算法各个版本的区别和新版本的优化。</p>
       <p>Q3:运用yolov5实现猫猫和胖鸟的识别。效果demo如下：</p>
-      <div style="display: flex; justify-content: space-around">
-        <img
-          src="../assets/machine/3121571886-3336332998-314A312FF21F8CB33592E0EF01118E3E.jpg"
-          style="width: 30%; height: 500px"
-        /><img
-          src="../assets/machine/1.png"
-          style="width: 30%; height: 500px"
-          alt="1"
-        />
+      <div class="animal">
+        <p>
+          <img
+            src="../assets/machine/3121571886-3336332998-314A312FF21F8CB33592E0EF01118E3E.jpg"
+          />
+        </p>
+        <p>
+          <img src="../assets/machine/1.png" alt="1" />
+        </p>
       </div>
     </el-card>
   </el-card>
@@ -724,6 +732,10 @@ export default {
   margin-bottom: 20px;
   min-height: 90vh;
   border-radius: 1%;
+  img {
+    width: 60%;
+    margin-left: 20%;
+  }
   p {
     margin-bottom: 20px;
     span {
@@ -745,6 +757,45 @@ export default {
   }
   a {
     color: #666;
+  }
+  .animal {
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 30%;
+      height: 500px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .questionbox {
+    width: auto; /* 在小屏幕上设置宽度为100% */
+    margin-left: 0;
+    .animal {
+      display: block;
+      img {
+        width: 80%;
+        margin-left: 10%;
+        height: 300px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .questionbox {
+    width: auto; /* 在小屏幕上设置宽度为100% */
+    margin-left: 0;
+    .animal {
+      display: block;
+      img {
+        width: 80%;
+        margin-left: 10%;
+        height: 300px;
+      }
+      pre{
+        font-size: 6px;
+      }
+    }
   }
 }
 </style>
