@@ -26,7 +26,7 @@
                 </p>
                 <p>
                   4.算法题目的提交方式:链时代平台赛。比赛链接为:
-                  <a href="https://www.luogu.com.cn/contest/129630#description"
+                  <a href="https://www.luogu.com.cn/contest/130670#description"
                     >点击跳转</a
                   >请自行注册后报名，提交。
                 </p>
