@@ -9,9 +9,8 @@ import Cookie from "js-cookie";
 export default {
   name: "App",
   created() {
-    // Cookie.set("token", 'login');
-    // const token = Cookie.get("token");
-    if (this.$route.path !== "/home") {
+    const token = Cookie.get("token");
+    if (this.$route.path !== "/home"&&token) {
       this.$router.push("/home");
     }
   },

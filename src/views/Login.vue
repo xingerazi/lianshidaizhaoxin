@@ -70,7 +70,7 @@ export default {
               {
                 if (res.data == "登录成功") {
                   console.log(res);
-                  Cookie.set("token", "login");
+                  Cookie.set("token", "login1");
                   this.$message.success("登录成功");
                   this.$router.push("/home");
                 } else {

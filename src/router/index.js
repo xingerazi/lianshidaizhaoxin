@@ -89,17 +89,17 @@ const router = new VueRouter({
 })
 
 
-// import Cookie from 'js-cookie'
-// router.beforeEach((to, from, next) => {
-//     const token = Cookie.get('token')
-//     // 1.如果访问的是登录页面（无需权限），直接放行
-//     if (to.path === '/login' || to.path === '/join') return next()
-//     // 2.1如果token为空，强制跳转到登录页面；否则，直接放行
-//     if (!token) {
-//       return next('/login')
-//     }
-//     next()
-//   })
+import Cookie from 'js-cookie'
+router.beforeEach((to, from, next) => {
+    const token = Cookie.get('token')
+    // 1.如果访问的是登录页面（无需权限），直接放行
+    if (to.path === '/login' || to.path === '/join') return next()
+    // 2.1如果token为空，强制跳转到登录页面；否则，直接放行
+    if (!token) {
+      return next('/login')
+    }
+    next()
+  })
    
 
 

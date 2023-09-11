@@ -61,17 +61,21 @@
               <i class="el-icon-document-remove"> 提交须知</i>
               <div class="intro">
                 <p>
-                  1. 提交内容包括：完成前端招新题的所有文件（每题一个文件夹）+ 你的学习笔记（markdown 文档，如果有在 md 文件中插入图片，请把图片也放在一个文件夹内一并提交）
+                  1. 提交内容包括：完成前端招新题的所有文件（每题一个文件夹）+
+                  你的学习笔记（markdown 文档，如果有在 md
+                  文件中插入图片，请把图片也放在一个文件夹内一并提交）
                 </p>
                 <p>
-                  2. 提交格式：第一条所有内容打包成压缩包，命名为：链时代前端招新-学号-姓名，添加至附件并发送至邮箱：1015077557@qq.com 邮件主题请与压缩包名称相同
+                  2.
+                  提交格式：第一条所有内容打包成压缩包，命名为：链时代前端招新-学号-姓名，添加至附件并发送至邮箱：1015077557@qq.com
+                  邮件主题请与压缩包名称相同
                 </p>
                 <p>
-                  3. 如果对于招新题或其他有一切问题，可以咨询群内前端学长学姐进行回答，或加QQ1015077557 / 2638874938
+                  3.
+                  如果对于招新题或其他有一切问题，可以咨询群内前端学长学姐进行回答，或加QQ1015077557
+                  / 2638874938
                 </p>
-                <p>
-                  4.招新题可以多次提交哦，祝大家好运~
-                </p>
+                <p>4.招新题可以多次提交哦，祝大家好运~</p>
                 <p>5.招新截止时间为：9.12—10.12</p>
               </div>
               <el-button
@@ -86,7 +90,17 @@
                 @click="downloadMarkdownFilefront"
                 >题目下载</el-button
               >
-
+              <el-button
+                class="submitbtn"
+                style="margin-top: 20px"
+                type="primary"
+                @click="
+                  (sumbitbox = !sumbitbox),
+                    (customHeaderData = '1015077557@qq.com')
+                "
+              >
+                招新题提交</el-button
+              >
             </div>
             <hr />
           </div>
@@ -126,7 +140,17 @@
                 @click="downloadMarkdownFilejava"
                 >题目下载</el-button
               >
-
+              <el-button
+                style="margin-top: 20px"
+                class="submitbtn"
+                type="primary"
+                @click="
+                  (sumbitbox = !sumbitbox),
+                    (customHeaderData = 'lxx18912405977@outlook.com')
+                "
+              >
+                招新题提交</el-button
+              >
             </div>
             <hr />
           </div>
@@ -143,7 +167,9 @@
             <div class="basic-content" style="margin: 20px 0 20px 10px">
               <i class="el-icon-document-remove"> 提交须知</i>
               <div class="intro">
-                <p>1.请使用markdown提交你的笔记和相关的图片，代码。（建议使用Typora）</p>
+                <p>
+                  1.请使用markdown提交你的笔记和相关的图片，代码。（建议使用Typora）
+                </p>
                 <p>2.招新题请发至邮箱1256878984@qq.com</p>
                 <p>
                   3.招新题请发送附件进行提交，最好整理完全后交压缩包，如果有图片可以将markdown转化为pdf形式，提交格式请将压缩包命名为“姓名+学号+第几次提交”（中间请空格间隔开）
@@ -151,7 +177,9 @@
                 <p>
                   4.如果有任何问题请加qq：3121571886或1401137731，或者直接在招新群中找相关学长学姐
                 </p>
-                <p>5.招新截止时间为：9.12—10.12,感谢您的支持与配合，机器学习，启动🤩！！</p>
+                <p>
+                  5.招新截止时间为：9.12—10.12,感谢您的支持与配合，机器学习，启动🤩！！
+                </p>
               </div>
               <el-button
                 style="margin-top: 20px"
@@ -165,7 +193,17 @@
                 @click="downloadMarkdownFileml"
                 >题目下载</el-button
               >
-
+              <el-button
+                class="submitbtn"
+                style="margin-top: 20px"
+                type="primary"
+                @click="
+                  (sumbitbox = !sumbitbox),
+                    (customHeaderData = '1256878984@qq.com')
+                "
+              >
+                招新题提交</el-button
+              >
             </div>
             <hr />
           </div>
@@ -192,7 +230,9 @@
                 <p>
                   4.如果有任何问题请加qq：1994589823或2589815532，或者直接在招新群中找相关学长
                 </p>
-                <p>5.招新截止时间为：9.12—10.12,感谢您的支持与配合，祝好运！！</p>
+                <p>
+                  5.招新截止时间为：9.12—10.12,感谢您的支持与配合，祝好运！！
+                </p>
               </div>
               <el-button
                 style="margin-top: 20px"
@@ -206,6 +246,17 @@
                 @click="downloadMarkdownFilechain"
                 >题目下载</el-button
               >
+              <el-button
+                class="submitbtn"
+                style="margin-top: 20px"
+                type="primary"
+                @click="
+                  (sumbitbox = !sumbitbox),
+                    (customHeaderData = '1994589823@qq.com')
+                "
+              >
+                招新题提交</el-button
+              >
             </div>
             <hr />
           </div>
@@ -216,20 +267,13 @@
     <el-dialog
       title="招新题提交"
       :visible.sync="sumbitbox"
-      width="30%"
+      width="25%"
       center
       class="submitit"
     >
       <h1 style="margin-bottom: 30px">文件上传</h1>
-      <input type="file" ref="fileInput" @change="handleFileChange" />
-      <div style="margin-top: 30px">
-        <input
-          type="text"
-          v-model="customHeaderData"
-          placeholder="请输入提交邮箱"
-          style="width: 200px; height: 30px; border: 1px solid #ccc"
-        />
-        <el-button @click="uploadFile">上传文件</el-button>
+      <div style="width: 30%;">
+        <input type="file" ref="fileInput" @change="handleFileChange" />
       </div>
       <span slot="footer" class="dialog-footer">
         <el-button @click="sumbitbox = false" style="margin-left: -10px"
@@ -237,9 +281,9 @@
         >
         <el-button
           type="primary"
-          @click="sumbitbox = false"
+          @click="uploadFile"
           style="margin-left: 40px"
-          >确 定</el-button
+          >上 传</el-button
         >
       </span>
     </el-dialog>
@@ -301,6 +345,7 @@ export default {
           console.error("文件上传失败:", error);
           this.$message.error("文件上传失败");
         });
+      this.sumbitbox = false;
     },
 
     //下载
