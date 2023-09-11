@@ -2,10 +2,9 @@
   <el-card class="questionbox">
     <h1>C语言 序言</h1>
     <p><span>不熟悉算法竞赛的选手请看这里：</span> </p>
-    <p>算法竞赛中要求的输出格式中，<span>不能有多余的内容 ,这也包括了“请输入整数 \bm a 和 \bm b” 这一类的提示用户输入信息的内容</span>。若包含了这些内容，将会被认为是 `Wrong Answer`，即洛谷上的 <code style="font-size: larger;">WA</code>。在对比代码输出和标准输出时，系统将忽略每一行结尾的空格，以及最后一行之后多余的换行符。</p>
-    <p>若因此类问题出现本机（看起来）<code style="font-size: larger;">AC</code> ，提交 <code style="font-size: larger;">WA</code> 的现象，请勿认为是洛谷评测机出了问题，而是你的代码中可能存在多余的输出信息。用户可以参考在题目末尾提供的代码。</p>
+    <p>算法竞赛中要求的输出格式中，<span>不能有多余的内容 ,这也包括了“请输入整数 a 和 b 这一类的提示用户输入信息的内容</span>。若包含了这些内容，将会被认为是 `Wrong Answer`，即洛谷上的 <code style="font-size: larger;">WA</code>。在对比代码输出和标准输出时，系统将忽略每一行结尾的空格，以及最后一行之后多余的换行符。</p>
+    <p>若因此类问题出现本机（看起来）<code style="font-size: larger; background-color: rgb(248,248,248);"> AC </code> ，提交 <code style="font-size: larger;background-color: rgb(248,248,248);"> WA </code> 的现象，请勿认为是洛谷评测机出了问题，而是你的代码中可能存在多余的输出信息。用户可以参考在题目末尾提供的代码。</p>
     <p><span>另外请善用应用中的在线 IDE 功能，</span> 以避免不同平台的评测中所产生的一些问题。</p>
-    <p>还有一点很重要的是，请不要在对应的题目讨论区中发布自己的题解，请发布到题解区域中，否则将处以删除或禁言的处罚。若发现无法提交题解则表明本题题解数量过多，仍不应发布讨论。</p>
     <el-divider></el-divider>
     <h2 style="margin-top: 30px;">C语言 基础题</h2>
     <el-divider></el-divider>
@@ -28,7 +27,7 @@
 
     样例输入 #1        20 30
 
-    样例输出 #1          50  
+    样例输出 #1        50  
       </pre>
       <p><span>任何一个伟大的思想，都有一个微不足道的开始😎！</span></p>
     </el-card>
@@ -87,28 +86,6 @@
       </pre>
       <p><span>注意，是啥都能输入哦</span></p>
         <p>PS：关键在于<span>getchar</span> ，与读入结束时的特性</p>
-    </el-card>
-    <el-card class="question">
-      <h3 style="margin-bottom: 30px">3.最大子段和</h3>
-      <p>
-        <span>题目描述: </span
-        >给出一个长度为 n 的序列 a，选出其中连续且非空的一段使得这段和最大。
-      </p>
-
-      <p><span>输入格式: </span>第一行是一个整数，表示序列的长度 n。</p>
-      <p>
-        <span>输出格式: </span>第二行有 n 个整数，第 i 个整数表示序列的第 i 个数字 a<sub>i</sub>。
-      </p>
-      <pre>
-
-    样例 #
-
-    样例输入 #1       7
-                      2 -4 3 -1 2 -4 
-
-    样例输出 #1       4
-                       
-      </pre>
     </el-card>
     <el-card class="question">
       <h3 style="margin-bottom: 30px">4.最大公约数和最小公倍数问题</h3>
@@ -307,7 +284,7 @@
                                              
 </pre
       >
-      <p><span> 提示:</span>   [数据范围]： 对于100%的数据，6 &le; n &le; 2<sup>64</sup> 。试试深度优先搜索！   </p>
+      <p><span> 提示:</span>   [数据范围]： 对于100%的数据，6 &le; n &le; 13 。试试深度优先搜索！   </p>
     </el-card>
     <el-card class="question" style="margin-bottom: 30px;">
       <h3 style="margin-bottom: 30px">9.镜子密室鲨人事件</h3>

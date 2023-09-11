@@ -354,10 +354,7 @@
       <p>1.初步了解神经网络工作的基本原理</p>
       <p>
         2.学习梯度下降算法用并完成所给数据用梯度下降法寻找
-        <img
-          src="../assets/machine/image-20230823193220544.png"
-          alt="image-20230823154816548"
-        />
+        <span>0.3*(x+y) <sup>2</sup>-x*y+1</span>
         的极小值
       </p>
       <p>3.运行结果要求打印类似如下的图</p>
@@ -761,8 +758,9 @@ export default {
     display: flex;
     justify-content: space-around;
     img {
-      width: 30%;
+      width: 80%;
       height: 500px;
+      margin-left: 10%;
     }
   }
 }
