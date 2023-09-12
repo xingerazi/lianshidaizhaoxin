@@ -1,8 +1,14 @@
 <template>
     <el-card class="questionbox">
       <h1>前端招新</h1>
+      <h3>序言</h3>
+      <p style="color: #777676 ;margin-top: 10px;margin-bottom: 10px;">学习前端我们可以收获什么?🌈</p>
+      <p style="color: #777676 ;margin-top: 5px;margin-bottom: 0px;">前端是指网站或应用程序的用户界面部分，也就是用户与其交互的所有内容。主要运用html，css,javascript等语言，来通过网页的形式自由发挥自己的实力与想象🎉</p>
+      <p style="color: #777676 ;margin-top: 5px;margin-bottom: 0px;">学习前端，你不仅可以写出好看，精美的网站，还可以搭建自己的博客，论坛。让你成为数字时代的创新者，引领者🏆。</p>
+      <p style="color: #777676 ;margin-top: 5px;margin-bottom: 0px;">学习前端是一个充满挑战和机会的精彩旅程，让我们一起踏上这个令人兴奋的学习之路吧 🚀🌟！</p>
+      <el-divider></el-divider>
       <p><span>注：Ⅰ~Ⅲ为基础题，Ⅳ~Ⅵ为进阶题。所有选择前端方向的同学都要至少完成三道基础题，学有余力的同学可以尝试后三道进阶题</span> </p>
-     <el-divider></el-divider>
+
      <h2 style="margin-top: 30px">前端 基础题🍋</h2>
       <el-card class="question">
         <h3 id="-">Ⅰ开干，我玩的就是真实</h3>
