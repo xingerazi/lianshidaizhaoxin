@@ -51,27 +51,14 @@
           >罗马数字中，较小的数字写在在较大的数字右边。
         </p>
         <p>
-          <span>题目描述: </span>将 1, 2, ... , 9 共 9 个数分成 3 组，分别组成 3
-          个三位数，且使这 3 个三位数构成 1 : 2 : 3 的比例，试求出所有满足条件的 3
-          个三位数。
+          <span>特例有三种：</span>
+         <p> I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。</p>
+         <p> X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 </p> 
+         <p> X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 </p>
         </p>
-        <p><span>输入格式: </span>无</p>
         <p>
-          <span>输出格式: </span>若干行，每行 3 个数字。按照每行第 1
-          个数字升序排列。
+          <span>格式: </span>输入一个罗马数字，将其转换为整数并输出。
         </p>
-        <pre>
-  
-          样例 #1
-  
-          样例输入 #1        无
-  
-          样例输出 #1    192 384 576
-                           * * *
-                            ...
-                           * * *
-                     （剩余部分不予展示）
-        </pre>
       </el-card>
       <el-card class="question">
         <h3 style="margin-bottom: 30px">3. 判断括号合法性 </h3>
@@ -99,7 +86,7 @@
         <h3 style="margin-bottom: 30px">4. 学生管理系统</h3>
         <p>
           <span>题目描述：</span>以使用到ArrayList数据类型为前提，设计一个简易的学生管理系统。包括“添加学生，删除学生，查询学生，退出”四个功能。
-<p><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp要求:&nbsp&nbsp</span>①学生对象为student类 ②student类包括id，name，age三个成员变量和标准成员方法  </p>
+<p><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp要求:&nbsp&nbsp</span>① 学生信息包括id，name，age三个信息  ②如果能将存储的信息持久化存储到文件中，那更加好了。  </p>
         </p>
       </el-card>
       <el-card class="question" style="margin-bottom: 30px">
